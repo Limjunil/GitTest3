@@ -2,8 +2,25 @@
 
 namespace ConsoleApp1
 {
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            // {    2023.01.05.     Add New feature user input / Beta
+            string userInput = string.Empty;
+            Console.WriteLine("This program convert Cm to Inch");
+            Console.Write("Input Cm value");
+            userInput= Console.ReadLine();
 
-    // {    2023.01.05. Modified class position /Alpha
+            int cmInput = 0;
+            int.TryParse(userInput, out cmInput);
+
+            Ruler ruler = new Ruler(cmInput);
+            // }    2023.01.05.     Add New feature user input / Beta
+
+            ruler.Run();
+        }
+    }
 
     public class Ruler
     {
@@ -25,18 +42,5 @@ namespace ConsoleApp1
             Console.WriteLine($"{Centimeter} cm는 {Inch} inch 입니다.");
         }
     } // class Ruler
-
-
-    // }    2023.01.05. Modified class position /Alpha
-
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            Ruler ruler = new Ruler(10);
-            ruler.Run();
-        }
-    }
-
     
 }
