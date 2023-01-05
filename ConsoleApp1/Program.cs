@@ -6,6 +6,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+            // {    2023.01.05.     Add Console / Test1
+            Console.WriteLine("ssss");
+            // }    2023.01.05.     Add Console / Test1
+
+
+
+
             // {    2023.01.05.     Add New feature user input / Beta
             string userInput = string.Empty;
             Console.WriteLine("This program convert Cm to Inch");
