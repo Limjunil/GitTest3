@@ -6,7 +6,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Ruler ruler = new Ruler(10);
+            // {    2023.01.05.     Add New feature user input / Beta
+            string userInput = string.Empty;
+            Console.WriteLine("This program convert Cm to Inch");
+            Console.Write("Input Cm value");
+            userInput= Console.ReadLine();
+
+            int cmInput = 0;
+            int.TryParse(userInput, out cmInput);
+
+            Ruler ruler = new Ruler(cmInput);
+            // }    2023.01.05.     Add New feature user input / Beta
+
             ruler.Run();
         }
     }
@@ -40,4 +51,5 @@ namespace ConsoleApp1
         // } 2023.01.05.    Add new feature SetInch func / Gamma
 
     } // class Ruler
+    
 }
