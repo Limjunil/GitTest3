@@ -2,14 +2,8 @@
 
 namespace ConsoleApp1
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            Ruler ruler = new Ruler(10);
-            ruler.Run();
-        }
-    }
+
+    // {    2023.01.05. Modified class position /Alpha
 
     public class Ruler
     {
@@ -31,4 +25,18 @@ namespace ConsoleApp1
             Console.WriteLine($"{Centimeter} cm는 {Inch} inch 입니다.");
         }
     } // class Ruler
+
+
+    // }    2023.01.05. Modified class position /Alpha
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Ruler ruler = new Ruler(10);
+            ruler.Run();
+        }
+    }
+
+    
 }
