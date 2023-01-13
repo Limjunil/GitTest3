@@ -11,6 +11,7 @@ namespace ConsoleApp1
             Console.WriteLine("ssss");
             // }    2023.01.05.     Add Console / Test1
 
+            Console.WriteLine();    
 
 
 
